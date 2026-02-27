@@ -12,19 +12,19 @@ int main(){
     scanf("%i %i %i %i", &a, &b, &c, &d);
     
     media = (a + b + c + d)/4;
-    printf("%f", media);
+  
 
     if(media < 60){
-      printf("\nINAPTO por media%f", media);
+      printf(" -  INAPTO por nota! (%.1f)", media);
     }
 
     else if(media >= 60){
-      printf("\n- APTO %f", media);
+      printf(" - APTO! (%.1f)", media);
     }
     
   }
   else if(frequencia < 75){
-    printf("\nINAPTO por falta");
+    printf("\n -  INAPTO por falta!");
   }
 
   return 0;
