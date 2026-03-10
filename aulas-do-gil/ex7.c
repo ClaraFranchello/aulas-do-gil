@@ -1,17 +1,22 @@
 #include <stdio.h>
-#include <math.h>
 
-  int main(){
-  
-    int a, b, c ;
-    double  x1, x2, raiz;
+int main() {
 
-    printf("Digite os coeficientes (a) (b) e (c): "); 
-    scanf("%i %i %i", &a, &b,&c);
+    int numero;
+    int lado1, lado2, lado3;
 
-    x1 = (-b + sqrt(pow(b, 2) - 4*a*c))/2;
-    x2 = (-b - sqrt(pow(b, 2) - 4*a*c))/2;
-    printf("Raizes: %.1lf %.1lf", x1, x2);
+    printf("Digite um numero inteiro de tres digitos: ");
+    scanf("%i", &numero);
+
+    if(lado1 == lado2 && lado2 == lado3){
+        printf("Triangulo Equilatero\n");
+    }
+    else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+        printf("Triangulo Isosceles\n");
+    }
+    else{
+        printf("Triangulo Escaleno\n");
+    }
+
     return 0;
-  }
-  
+}
