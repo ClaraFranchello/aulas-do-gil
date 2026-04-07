@@ -5,16 +5,13 @@
         int dia, mes;
 
         printf("Digite um dia e um mes: ");
-        scanf("%i %i", &dia, &mes);
+        scanf("%i %i", &dia, &mes );
 
-        if(dia < 1 || dia > 31 ){
+        if(dia < 1 || dia > 31 || dia > 28 && mes == 2){
             printf("dia invalido!");
         }
         else if (mes < 1 || mes > 12){
             printf("mes invalido!");
-        }
-        else if(dia > 28 && mes == 2){
-            printf("dia invalido!");
         }
         else{
             if(dia < 10 && mes == 1){
